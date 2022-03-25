@@ -43,7 +43,7 @@ pipeline {
        stage('Docker Run') {
         steps {
             script {
-                dockerImage.run("-p 8020:80--rm --name practical_newton1")
+                dockerImage.run("-p 8020:80 --rm --name practical_newton1")
                 }
             }
         }
